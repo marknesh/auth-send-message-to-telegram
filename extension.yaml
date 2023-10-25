@@ -4,7 +4,7 @@ name: auth-send-message-to-telegram
 version: 0.0.1
 specVersion: v1beta
 
-displayName: Send Message to Telegram.
+displayName: Send Message to Telegram
 
 description: >-
   Sends a message to your telegram bot once a new user is created.
