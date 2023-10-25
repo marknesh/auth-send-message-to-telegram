@@ -39,7 +39,7 @@ params:
     label: Telegram bot token
     description: >-
       What is your telegram bot token?
-    type: string
+    type: secret
     required: true
     immutable: false
 
@@ -47,7 +47,7 @@ params:
     label: Telegram Chat ID
     description: >-
       What is your telegram bot chat id?
-    type: string
+    type: secret
     required: true
     immutable: false
 
