@@ -1,0 +1,17 @@
+{
+  "emulators": {
+    "functions": {
+      "port": 5001
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true,
+    "auth": {
+      "port": 9099
+    }
+  },
+  "extensions": {
+    "auth-send-message-to-telegram": "../.."
+  }
+}
