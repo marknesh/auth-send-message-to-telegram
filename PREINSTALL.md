@@ -1,4 +1,4 @@
-# How this extension works
+## How this extension works
 
 Use this extension to send a message to a telegram bot once a new user is created.
 
@@ -8,7 +8,7 @@ When you configure this extension, you’ll need to supply your **Telegram token
 
 <!-- We recommend keeping the following section to explain how billing for Firebase Extensions works -->
 
-# Billing
+## Billing
 
 This extension uses other Firebase or Google Cloud Platform services which may have associated charges:
 
