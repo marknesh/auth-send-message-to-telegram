@@ -1,4 +1,4 @@
-<!-- 
+<!--
 This file provides your users an overview of how to use your extension after they've installed it. All content is optional, but this is the recommended format. Your users will see the contents of this file in the Firebase console after they install the extension.
 
 Include instructions for using the extension and any important functional details. Also include **detailed descriptions** for any additional post-installation setup required by the user.
@@ -12,18 +12,16 @@ https://firebase.google.com/docs/extensions/publishers/user-documentation#writin
 
 # See it in action
 
-You can test out this extension right away!
-
-Visit the following URL:
-${function:greetTheWorld.url}
+You can test out this extension by creating a new user account.
 
 # Using the extension
 
-When triggered by an HTTP request, this extension responds with the following specified greeting: "${param:GREETING} World from ${param:EXT_INSTANCE_ID}".
+When a new user is created, this extension send a message to a telegram bot.
 
-To learn more about HTTP functions, visit the [functions documentation](https://firebase.google.com/docs/functions/http-events).
+To learn more about Firebase Authentication triggers, visit the [functions documentation](https://firebase.google.com/docs/functions/auth-events).
 
 <!-- We recommend keeping the following section to explain how to monitor extensions with Firebase -->
+
 # Monitoring
 
 As a best practice, you can [monitor the activity](https://firebase.google.com/docs/extensions/manage-installed-extensions#monitor) of your installed extension, including checks on its health, usage, and logs.

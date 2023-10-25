@@ -7,7 +7,7 @@
     "build:watch": "tsc --watch",
     "mocha": "mocha '**/*.spec.ts'",
     "test": "(cd integration-tests && firebase emulators:exec 'npm run mocha' -P demo-test)",
-    "dev": "cd integration-tests && npm run build:watch | firebase emulators:start --project demo-test "
+    "dev": "cd integration-tests && npm run build:watch | firebase emulators:start --project demo-test"
   },
   "main": "lib/index.js",
   "dependencies": {
