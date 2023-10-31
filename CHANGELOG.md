@@ -9,3 +9,7 @@
 ## Version 0.0.3
 
 - Use messaging tag
+
+## Version 0.0.4
+
+- Remove duplicate title in PREINSTALL.md
