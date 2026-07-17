@@ -14,6 +14,8 @@ This extension uses other Firebase or Google Cloud Platform services which may h
 
 To install an extension, your project must be on the [Blaze (pay as you go) plan](https://firebase.google.com/pricing)
 
+
+
 **Configuration Parameters:**
 
 - TELEGRAM_BOT_TOKEN: The unique authentication token assigned to your Telegram bot by the BotFather.
@@ -21,6 +23,31 @@ To install an extension, your project must be on the [Blaze (pay as you go) plan
 - TELEGRAM_CHAT_ID: The telegram chat ID.
 
 - TELEGRAM_MESSAGE: The message to send to the telegram bot.This field is optional.
+
+## How to get your Telegram bot token and chat ID
+
+### 1. Create a bot with BotFather
+
+1. Open Telegram and search for [@BotFather](https://t.me/BotFather).
+2. Start a chat and send `/newbot`.
+3. Follow the prompts to choose a display name and a username (the username must end in `bot`).
+4. BotFather will reply with your bot token. It looks like:
+  `123456789:ABCdefGHIjklMNOpqrsTUVwxyz`
+
+Save this token — you’ll use it as **TELEGRAM_BOT_TOKEN** when configuring the extension.
+
+### 2. Get your chat ID with getUpdates
+
+1. Open a chat with your new bot and send it any message (for example: `hello`).
+2. In a browser, open:
+  `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates`
+   Replace `<YOUR_BOT_TOKEN>` with the token from BotFather.
+
+In the JSON response, find `"chat":{"id": ... }`. That number is your chat ID.
+
+Use that `id` value as **TELEGRAM_CHAT_ID** when configuring the extension.
+
+If `result` is empty (`[]`), send another message to the bot and refresh the URL.
 
 **Cloud Functions:**
 
