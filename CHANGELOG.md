@@ -13,3 +13,7 @@
 ## Version 0.0.4
 
 - Remove duplicate title in PREINSTALL.md
+
+## Version 0.0.5
+
+- Added setup instructions for obtaining Telegram bot token and chat ID
