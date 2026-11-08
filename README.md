@@ -2,6 +2,15 @@
 
 **Author**: Mark Munene (**[https://github.com/marknesh](https://github.com/marknesh)**)
 
+> [!WARNING]
+> **Firebase Extensions are deprecated and will shut down on March 31, 2027. No publisher-authored Function Kit replacement is available for this extension.**
+>
+> - Function Kits (the replacement for Extensions) are built on **2nd gen (v2) Cloud Functions**.
+> - This extension uses the Auth `onCreate` trigger (`functions.auth.user().onCreate`), which is a **1st gen (v1)** trigger.
+> - **v2 has no production-ready equivalent yet.** The v2 `onUserCreated` trigger is still in beta/preview and Firebase says not to use it in production, so this extension cannot become a Function Kit for now.
+>
+> If you need this behaviour going forward, write your own function. The stable v2 option is the `beforeUserCreated` blocking function, which requires Firebase Authentication with Identity Platform.
+
 **Description**: Sends a message to your telegram bot once a new user is created.
 
 **Details**: Use this extension to send instant notifications to a telegram bot which notifies you when a new user is created.
